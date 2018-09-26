@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "1bca4952-c823-40be-b71f-6e801b92e1f6",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "吉宝2": {
+      "ver": "1.0.3",
+      "uuid": "659ad69a-6763-4096-9a9c-dd145b1bf977",
+      "rawTextureUuid": "1bca4952-c823-40be-b71f-6e801b92e1f6",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 119,
+      "height": 120,
+      "rawWidth": 119,
+      "rawHeight": 120,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

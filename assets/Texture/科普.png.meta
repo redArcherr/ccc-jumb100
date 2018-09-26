@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "0be77dfd-e08d-4f1f-9438-927578d5b43d",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "科普": {
+      "ver": "1.0.3",
+      "uuid": "e2703f7a-5264-44fb-ac93-62c6029311e7",
+      "rawTextureUuid": "0be77dfd-e08d-4f1f-9438-927578d5b43d",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 750,
+      "height": 1334,
+      "rawWidth": 750,
+      "rawHeight": 1334,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

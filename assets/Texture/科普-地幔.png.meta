@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "478623da-ee1d-4865-9103-cce01d14b9ae",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "科普-地幔": {
+      "ver": "1.0.3",
+      "uuid": "9e4da989-b84b-415c-a6a9-8229d26175a6",
+      "rawTextureUuid": "478623da-ee1d-4865-9103-cce01d14b9ae",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 336,
+      "height": 261,
+      "rawWidth": 336,
+      "rawHeight": 261,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

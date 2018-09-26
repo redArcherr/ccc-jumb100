@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "6874ff54-b988-4559-9943-ac207038dd09",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "下地幔探险": {
+      "ver": "1.0.3",
+      "uuid": "166e2839-b443-49bd-acaa-d4ed7e75fc78",
+      "rawTextureUuid": "6874ff54-b988-4559-9943-ac207038dd09",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 207,
+      "height": 39,
+      "rawWidth": 207,
+      "rawHeight": 39,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "a1db1a0c-5426-4023-8212-55f1adabfa11",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "科普-地球": {
+      "ver": "1.0.3",
+      "uuid": "3e013c20-9952-4647-97a1-2532cee7108a",
+      "rawTextureUuid": "a1db1a0c-5426-4023-8212-55f1adabfa11",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0.5,
+      "offsetY": 0,
+      "trimX": 1,
+      "trimY": 0,
+      "width": 394,
+      "height": 350,
+      "rawWidth": 395,
+      "rawHeight": 350,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

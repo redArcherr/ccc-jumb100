@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "b692d325-d79b-4d1d-9c71-9f618db9f07e",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "地壳探险": {
+      "ver": "1.0.3",
+      "uuid": "ebfb1fd5-2460-4318-984b-ed22a1eaf660",
+      "rawTextureUuid": "b692d325-d79b-4d1d-9c71-9f618db9f07e",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 207,
+      "height": 39,
+      "rawWidth": 207,
+      "rawHeight": 39,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "a23a96c7-6f28-42f4-b57d-6a4fefb9f6ab",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "科普-莫霍": {
+      "ver": "1.0.3",
+      "uuid": "03eefa7d-c2bd-4c3a-b786-aa4ae59611ff",
+      "rawTextureUuid": "a23a96c7-6f28-42f4-b57d-6a4fefb9f6ab",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 309,
+      "height": 261,
+      "rawWidth": 309,
+      "rawHeight": 261,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "62b7a53b-fb99-4215-9cf6-06ae7c70fc43",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "上地幔探险": {
+      "ver": "1.0.3",
+      "uuid": "e616119f-3749-4202-9414-e03c9cf0a72e",
+      "rawTextureUuid": "62b7a53b-fb99-4215-9cf6-06ae7c70fc43",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 207,
+      "height": 39,
+      "rawWidth": 207,
+      "rawHeight": 39,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

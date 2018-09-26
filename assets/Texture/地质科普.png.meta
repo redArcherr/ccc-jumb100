@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "0e03b536-bd57-4783-872e-347d50d2db9b",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "地质科普": {
+      "ver": "1.0.3",
+      "uuid": "f5146434-a52d-4386-a74e-6195f8a7116f",
+      "rawTextureUuid": "0e03b536-bd57-4783-872e-347d50d2db9b",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": 0,
+      "trimX": 1,
+      "trimY": 0,
+      "width": 313,
+      "height": 89,
+      "rawWidth": 316,
+      "rawHeight": 89,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

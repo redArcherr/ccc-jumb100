@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "d818ecc9-540a-4050-8943-58b9474b1683",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "科普-地核": {
+      "ver": "1.0.3",
+      "uuid": "46d1c7bd-6315-4f56-bd11-d2696abf3113",
+      "rawTextureUuid": "d818ecc9-540a-4050-8943-58b9474b1683",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 275,
+      "height": 261,
+      "rawWidth": 275,
+      "rawHeight": 261,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
