@@ -89,7 +89,7 @@ cc.Class({
     },
     
     onCollisionEnter: function (other, self) {
-        this.node.color = cc.Color.RED;
+        //this.node.color = cc.Color.RED;
         this.touchingNumber ++;   
         // 1st step 
         // get pre aabb, go back before collision

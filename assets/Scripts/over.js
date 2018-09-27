@@ -52,17 +52,28 @@ cc.Class({
 
         let background=cc.find("Canvas/background");//背景节点
         let stateSprite=cc.find("Canvas/background/stateSprite");//通关状态节点
-        if(global.isSuccess){
-            background.getComponent(cc.Sprite).spriteFrame.setTexture(cc.url.raw("Texture/success.png"));
-            stateSprite.getComponent(cc.Sprite).spriteFrame.setTexture(cc.url.raw("Texture/success_t.png"));
-            background.width=cc.winSize.width;
-            background.height=cc.winSize.height;
-        }else{
-            background.getComponent(cc.Sprite).spriteFrame.setTexture(cc.url.raw("Texture/fail.png"));
-            stateSprite.getComponent(cc.Sprite).spriteFrame.setTexture(cc.url.raw("Texture/fail_t.png"));
-            background.width=cc.winSize.width;
-            background.height=cc.winSize.height;
-        } 
+        if(background!=null&&stateSprite!=null){
+            if(global.isSuccess){
+                cc.loader.loadRes("./success", cc.SpriteFrame, function (err, spFrame) {
+                    background.getComponent(cc.Sprite).spriteFrame = spFrame;
+                    background.width=cc.winSize.width;
+                    background.height=cc.winSize.height;          
+                });
+                cc.loader.loadRes("./success_t", cc.SpriteFrame, function (err, spFrame) {
+                    stateSprite.getComponent(cc.Sprite).spriteFrame = spFrame;           
+                });
+            }else{
+                cc.loader.loadRes("./fail", cc.SpriteFrame, function (err, spFrame) {
+                    background.getComponent(cc.Sprite).spriteFrame = spFrame;
+                    background.width=cc.winSize.width;
+                    background.height=cc.winSize.height;          
+                });
+                cc.loader.loadRes("./fail_t", cc.SpriteFrame, function (err, spFrame) {
+                    stateSprite.getComponent(cc.Sprite).spriteFrame = spFrame;           
+                });
+            } 
+        }
+        
     },
     //重玩
     buttonClick:function(){
@@ -123,6 +134,11 @@ cc.Class({
         let nameNode=cc.find("Canvas/background/textMask/nameLable");
         let name=nameNode.getComponent(cc.Label);
         name.string=this.stonText.config[idx].name;
+         //图片
+        let stonNode=cc.find("Canvas/background/textMask/stonSprite");
+        cc.loader.loadRes("./stons/"+name.string, cc.SpriteFrame, function (err, spFrame) {
+            stonNode.getComponent(cc.Sprite).spriteFrame = spFrame;           
+        });
     },
     //关闭背包
     closeText:function(){

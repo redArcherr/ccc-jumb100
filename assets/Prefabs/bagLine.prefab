@@ -101,7 +101,7 @@
     "_isTrimmedMode": true,
     "_state": 0,
     "_atlas": null,
-    "_id": "04shMx4cZPkbFbaO7lFymN"
+    "_id": "cbqRvdKCxDuaBzvbKhuxLu"
   },
   {
     "__type__": "cc.Layout",
@@ -133,7 +133,7 @@
     "_N$spacingY": 0,
     "_N$verticalDirection": 1,
     "_N$horizontalDirection": 0,
-    "_id": "cfGtZhavRHr6DtLq4yl5Re"
+    "_id": "d6ldSCx8VPSomJiBT1jUZ8"
   },
   {
     "__type__": "cc.Widget",
@@ -160,7 +160,7 @@
     "_isAbsVerticalCenter": true,
     "_originalWidth": 630,
     "_originalHeight": 0,
-    "_id": "5fmMBMX45KqpDQaxHGABls"
+    "_id": "914r6Dp8RARbM5UholhrQt"
   },
   {
     "__type__": "cc.PrefabInfo",

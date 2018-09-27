@@ -33,7 +33,8 @@ cc.Class({
     },
 
     onLoad:function(){
-        this.platCount=0;
+        this.platCount=0;//平台数量控制平台出现规律
+        this.stonChange=0;//控制宝石出现规律每5个一组
         this.titleSprite=cc.find("Canvas/UI/titleSprite");//标题
         this.bg1=cc.find("root/bg/bg1");
         this.bg2=cc.find("root/bg/bg2");
@@ -72,7 +73,7 @@ cc.Class({
                 plat = cc.instantiate(this.platPrefabs[2]);
                 if(rand>0.6){
                     let ston=cc.instantiate(this.stonPrefab);
-                    ston.getComponent('ston').createSton(Math.floor(Math.random()*3));
+                    ston.getComponent('ston').createSton(Math.floor(Math.random()*5)+this.stonChange);
                     ston.parent=plat;
                     ston.y=plat.height/2+ston.height/2;
                 }
@@ -84,7 +85,7 @@ cc.Class({
                 plat = cc.instantiate(this.platPrefabs[0]);
                 if(rand>0.6){
                     let ston=cc.instantiate(this.stonPrefab);
-                    ston.getComponent('ston').createSton(Math.floor(Math.random()*3));
+                    ston.getComponent('ston').createSton(Math.floor(Math.random()*5)+this.stonChange);
                     ston.parent=plat;
                     ston.y=plat.height/2+ston.height/2;
                 }
@@ -113,13 +114,17 @@ cc.Class({
                     //进度和标题
                     this.gameProgress.progress=this.bgNode.y/(this.bgNodeMaxY-this.bg1.height/2-110);
                     if(this.bgNode.y<840){
+                        this.stonChange=0;
                         this.titleSprite.getComponent(cc.Sprite).spriteFrame=this.titleSign[0];
-                    }else if(this.bgNode.y>840 && this.bgNode.y<this.bg1.height*2){                     
+                    }else if(this.bgNode.y>840 && this.bgNode.y<this.bg1.height*2){
+                        this.stonChange=5;                     
                         this.titleSprite.getComponent(cc.Sprite).spriteFrame=this.titleSign[1];
                     }else if(this.bgNode.y>this.bg1.height*2 && this.bgNode.y<this.bg1.height*3){
+                        this.stonChange=10;
                         this.playerNode.getComponent(cc.Sprite).spriteFrame=this.defplayer;//防火服
                         this.titleSprite.getComponent(cc.Sprite).spriteFrame=this.titleSign[2];
                     }else if(this.bgNode.y>this.bg1.height*3){
+                        this.stonChange=15;
                         this.titleSprite.getComponent(cc.Sprite).spriteFrame=this.titleSign[3];
                     }
                 }else{
