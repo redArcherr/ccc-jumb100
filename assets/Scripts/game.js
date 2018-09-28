@@ -34,7 +34,7 @@ cc.Class({
 
     onLoad:function(){
         this.platCount=0;//平台数量控制平台出现规律
-        this.stonChange=0;//控制宝石出现规律每5个一组
+        this.stonChange=10;//控制宝石出现规律每5个一组
         this.titleSprite=cc.find("Canvas/UI/titleSprite");//标题
         this.bg1=cc.find("root/bg/bg1");
         this.bg2=cc.find("root/bg/bg2");
@@ -60,7 +60,7 @@ cc.Class({
         });
         //用来加保护罩
         this.playerNode=cc.find("root/player");
-       
+        
     },
 
     spanPlat:function(){
@@ -72,10 +72,12 @@ cc.Class({
             }else{
                 plat = cc.instantiate(this.platPrefabs[2]);
                 if(rand>0.6){
-                    let ston=cc.instantiate(this.stonPrefab);
-                    ston.getComponent('ston').createSton(Math.floor(Math.random()*5)+this.stonChange);
-                    ston.parent=plat;
-                    ston.y=plat.height/2+ston.height/2;
+                    if(this.stonChange!=-1){
+                        let ston=cc.instantiate(this.stonPrefab);
+                        ston.getComponent('ston').createSton(Math.floor(Math.random()*9)+this.stonChange);
+                        ston.parent=plat;
+                        ston.y=plat.height/2+ston.height/2;
+                    }    
                 }
             }
         }else{
@@ -84,11 +86,13 @@ cc.Class({
             }else{
                 plat = cc.instantiate(this.platPrefabs[0]);
                 if(rand>0.6){
-                    let ston=cc.instantiate(this.stonPrefab);
-                    ston.getComponent('ston').createSton(Math.floor(Math.random()*5)+this.stonChange);
-                    ston.parent=plat;
-                    ston.y=plat.height/2+ston.height/2;
-                }
+                    if(this.stonChange!=-1){
+                        let ston=cc.instantiate(this.stonPrefab);
+                        ston.getComponent('ston').createSton(Math.floor(Math.random()*9)+this.stonChange);
+                        ston.parent=plat;
+                        ston.y=plat.height/2+ston.height/2;
+                    }    
+                } 
             }
         } 
         plat.parent = cc.find("root/platforms");
@@ -97,9 +101,9 @@ cc.Class({
 
     spanPlatPos:function(plat){
         let x,y,winSize=cc.winSize;
-        x = Math.floor(Math.random()*(winSize.width-240))+120;
+        //x = Math.floor(Math.random()*(winSize.width-240))+120;
+        this.platCount == 1 ? x = 155 : x = Math.floor(Math.random()*(winSize.width-240))+120;
         this.platCount <= 8 ? y=(winSize.height)-(this.platSpace*this.platCount)-this.platSpace : y=(winSize.height)-this.platSpace*8;
-        //y=(winSize.height)-(this.platSpace*this.platCount)-this.platSpace;
         return cc.v2(x,y);
     },
     gameOver:function(){
@@ -114,17 +118,21 @@ cc.Class({
                     //进度和标题
                     this.gameProgress.progress=this.bgNode.y/(this.bgNodeMaxY-this.bg1.height/2-110);
                     if(this.bgNode.y<840){
-                        this.stonChange=0;
+                        //地壳
+                        this.stonChange=10;
                         this.titleSprite.getComponent(cc.Sprite).spriteFrame=this.titleSign[0];
                     }else if(this.bgNode.y>840 && this.bgNode.y<this.bg1.height*2){
-                        this.stonChange=5;                     
+                        //上地幔
+                        this.stonChange=0;                     
                         this.titleSprite.getComponent(cc.Sprite).spriteFrame=this.titleSign[1];
                     }else if(this.bgNode.y>this.bg1.height*2 && this.bgNode.y<this.bg1.height*3){
-                        this.stonChange=10;
+                        //下地幔
+                        //this.stonChange=10;
                         this.playerNode.getComponent(cc.Sprite).spriteFrame=this.defplayer;//防火服
                         this.titleSprite.getComponent(cc.Sprite).spriteFrame=this.titleSign[2];
                     }else if(this.bgNode.y>this.bg1.height*3){
-                        this.stonChange=15;
+                        //地核
+                        this.stonChange=-1;//无
                         this.titleSprite.getComponent(cc.Sprite).spriteFrame=this.titleSign[3];
                     }
                 }else{

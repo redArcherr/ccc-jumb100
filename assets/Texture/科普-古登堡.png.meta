@@ -1,6 +1,6 @@
 {
   "ver": "2.2.0",
-  "uuid": "1cee018f-c102-47e2-91af-0396e72fd927",
+  "uuid": "3b04561b-e1e9-4429-bb99-bff7dbe307ca",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
@@ -8,8 +8,8 @@
   "subMetas": {
     "科普-古登堡": {
       "ver": "1.0.3",
-      "uuid": "6e7a0ebb-623a-49b4-be69-a0bb5ec6d7d3",
-      "rawTextureUuid": "1cee018f-c102-47e2-91af-0396e72fd927",
+      "uuid": "b6aae63d-3277-4506-994e-238713899749",
+      "rawTextureUuid": "3b04561b-e1e9-4429-bb99-bff7dbe307ca",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -17,10 +17,10 @@
       "offsetY": 0,
       "trimX": 0,
       "trimY": 0,
-      "width": 344,
-      "height": 261,
-      "rawWidth": 344,
-      "rawHeight": 261,
+      "width": 235,
+      "height": 216,
+      "rawWidth": 235,
+      "rawHeight": 216,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,
