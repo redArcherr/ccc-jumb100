@@ -103,7 +103,7 @@
     "_isTrimmedMode": true,
     "_state": 0,
     "_atlas": null,
-    "_id": "dcWt27yUlJIbex1Q464PP5"
+    "_id": "0eW5gRWbtPcac1uZrIfOqO"
   },
   {
     "__type__": "a93edWtR3FE1a5TWFnBr7l6",
@@ -113,9 +113,9 @@
       "__id__": 1
     },
     "_enabled": true,
-    "speed": 130,
+    "speed": 110,
     "type": "thorn",
-    "_id": "facULkwRVPl7c0p3wxktaM"
+    "_id": "1d3KRZfrpH8YneWAeA6xuC"
   },
   {
     "__type__": "cc.BoxCollider",
@@ -136,7 +136,7 @@
       "width": 119.3,
       "height": 36.2
     },
-    "_id": "69QcKgtFpOhJtnYy/9zSoU"
+    "_id": "b8oNCNnd1GO79rmXX6T4rF"
   },
   {
     "__type__": "cc.PrefabInfo",

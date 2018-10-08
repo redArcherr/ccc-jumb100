@@ -81,19 +81,23 @@ cc.Class({
                 }
             }
         }else{
-            if(this.platCount%3==0){
-                plat = cc.instantiate(this.platPrefabs[1]);
-            }else{
+            if(this.platCount<7){
                 plat = cc.instantiate(this.platPrefabs[0]);
-                if(rand>0.6){
-                    if(this.stonChange!=-1){
-                        let ston=cc.instantiate(this.stonPrefab);
-                        ston.getComponent('ston').createSton(Math.floor(Math.random()*9)+this.stonChange);
-                        ston.parent=plat;
-                        ston.y=plat.height/2+ston.height/2;
-                    }    
-                } 
-            }
+            }else{
+                if(this.platCount%3==0){
+                    plat = cc.instantiate(this.platPrefabs[1]);
+                }else{
+                    plat = cc.instantiate(this.platPrefabs[0]);
+                    if(rand>0.6){
+                        if(this.stonChange!=-1){
+                            let ston=cc.instantiate(this.stonPrefab);
+                            ston.getComponent('ston').createSton(Math.floor(Math.random()*9)+this.stonChange);
+                            ston.parent=plat;
+                            ston.y=plat.height/2+ston.height/2;
+                        }    
+                    } 
+                }
+            }    
         } 
         plat.parent = cc.find("root/platforms");
         plat.position = this.spanPlatPos(plat);
@@ -123,12 +127,12 @@ cc.Class({
                         this.titleSprite.getComponent(cc.Sprite).spriteFrame=this.titleSign[0];
                     }else if(this.bgNode.y>840 && this.bgNode.y<this.bg1.height*2){
                         //上地幔
-                        this.stonChange=0;                     
+                        this.stonChange=0; 
+                        this.playerNode.getComponent(cc.Sprite).spriteFrame=this.defplayer;//防火服                
                         this.titleSprite.getComponent(cc.Sprite).spriteFrame=this.titleSign[1];
                     }else if(this.bgNode.y>this.bg1.height*2 && this.bgNode.y<this.bg1.height*3){
                         //下地幔
-                        //this.stonChange=10;
-                        this.playerNode.getComponent(cc.Sprite).spriteFrame=this.defplayer;//防火服
+                        //this.stonChange=10;  
                         this.titleSprite.getComponent(cc.Sprite).spriteFrame=this.titleSign[2];
                     }else if(this.bgNode.y>this.bg1.height*3){
                         //地核
