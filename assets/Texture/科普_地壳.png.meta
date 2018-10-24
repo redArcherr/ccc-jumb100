@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "5e6c37f2-6b49-4e20-9daf-24b03ae3159d",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "科普_地壳": {
+      "ver": "1.0.3",
+      "uuid": "fa4e4e69-6207-4531-932a-0060b4bc4e22",
+      "rawTextureUuid": "5e6c37f2-6b49-4e20-9daf-24b03ae3159d",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": 0.5,
+      "trimX": 34,
+      "trimY": 0,
+      "width": 444,
+      "height": 686,
+      "rawWidth": 513,
+      "rawHeight": 687,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
