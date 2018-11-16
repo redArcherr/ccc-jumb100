@@ -29,6 +29,14 @@ cc.Class({
        defplayer:{
            default:null,
            type:cc.SpriteFrame
+       },
+       success_audio:{
+        default:null,
+        type:cc.AudioClip
+       },
+       fail_audio:{
+        default:null,
+        type:cc.AudioClip
        }
     },
 
@@ -111,6 +119,11 @@ cc.Class({
         return cc.v2(x,y);
     },
     gameOver:function(){
+        if(global.isSuccess===true){
+            this.bgm=cc.audioEngine.play(this.success_audio,false,1);
+        }else{
+            this.bgm=cc.audioEngine.play(this.fail_audio,false,1);
+        }
         global.gameState="over";
         cc.director.loadScene("over");
     },
