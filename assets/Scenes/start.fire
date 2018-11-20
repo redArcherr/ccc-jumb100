@@ -47,8 +47,8 @@
     },
     "_scale": {
       "__type__": "cc.Vec3",
-      "x": 0.45247952629372296,
-      "y": 0.45247952629372296,
+      "x": 0.4833333333333333,
+      "y": 0.4833333333333333,
       "z": 1
     },
     "_quat": {
@@ -483,7 +483,7 @@
       "__id__": 8
     },
     "_enabled": true,
-    "transition": 2,
+    "transition": 3,
     "pressedColor": {
       "__type__": "cc.Color",
       "r": 255,
@@ -2002,6 +2002,12 @@
     "_enabled": true,
     "audio": {
       "__uuid__": "459cecc2-3195-44e2-bb59-4f3265a87e50"
+    },
+    "success": {
+      "__uuid__": "89546fde-7b80-4979-9e9f-86c73a73be63"
+    },
+    "fail": {
+      "__uuid__": "18d73bdd-cf2f-42a4-9a5c-cdd587f440b4"
     },
     "_id": "76ru8tipZC6aLVhCkGjEYb"
   }
